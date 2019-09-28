@@ -9,7 +9,7 @@ bot = telebot.TeleBot('828439192:AAH-0ngnJwu_4rxZgKTc_CV5RslHTP4puDo')
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
-	bot.reply_to(message, "Привет! Погоду в каком городе Вам нужно узнать?")
+	bot.reply_to(message, "Привет! Погоду в каком городе Вам нужно узнать?")    # Welcome message.
 
 @bot.message_handler(content_types=['text'])
 def answer(message):
